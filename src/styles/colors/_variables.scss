@@ -1,0 +1,68 @@
+:root {
+  /* Backgrounds */
+  --bg-main: #eaf3f1;
+  --bg-section: #f6fbfa;
+  --bg-card: #ffffff;
+  --bg-footer: #000000;
+
+  /* Text */
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --text-inverse: #ffffff;
+
+  /* Buttons */
+  --btn-primary-bg: #000000;
+  --btn-primary-text: #ffffff;
+  --btn-secondary-bg: #e2e8f0;
+  --btn-secondary-text: #0f172a;
+
+  /* Borders & UI */
+  --border-light: #e2e8f0;
+  --border-muted: #cbd5e1;
+
+  /* Accent */
+  --accent: #6fb1a1;
+  --accent-soft: #d7ece6;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.12);
+
+  /* Radius */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+}
+
+body[data-theme="dark"] {
+  /* Backgrounds */
+  --bg-main: #0b1120;
+  --bg-section: #0f172a;
+  --bg-card: #111827;
+  --bg-footer: #020617;
+
+  /* Text */
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5f5;
+  --text-muted: #94a3b8;
+  --text-inverse: #020617;
+
+  /* Buttons */
+  --btn-primary-bg: #ffffff;
+  --btn-primary-text: #020617;
+  --btn-secondary-bg: #1e293b;
+  --btn-secondary-text: #f8fafc;
+
+  /* Borders & UI */
+  --border-light: #1e293b;
+  --border-muted: #334155;
+
+  /* Accent */
+  --accent: #7dd3c7;
+  --accent-soft: #1f3d38;
+
+  /* Shadows */
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.6);
+  --shadow-md: 0 20px 40px rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,9 @@
+/*base*/
+@use "../styles/colors/variables";
+@use "../styles/fonts/typography";
+@use "../styles/base/global";
+
+/*layout*/
+@use "../styles/layouts/navbar.scss"; 
+
+/*components*/
