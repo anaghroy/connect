@@ -4,6 +4,7 @@
 @use "../styles/base/global";
 
 /*layout*/
-@use "../styles/layouts/navbar.scss"; 
+@use "../styles/layouts/_navbar.scss"; 
+@use "../styles/layouts/_freeclance.scss"; 
 
 /*components*/
