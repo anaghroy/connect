@@ -28,6 +28,7 @@
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 28px;
+  --radius-xl: 50px;
 }
 
 body[data-theme=dark] {
@@ -434,6 +435,133 @@ body {
   position: absolute;
   top: 22%;
   left: 21%;
+}
+
+.outer-popular {
+  width: 100%;
+  padding: 3rem;
+  margin-top: 8%;
+  /*Grid layout*/
+  /* image blocks */
+  /* text blocks */
+  /* Responsiveness */
+}
+.outer-popular .inner-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.outer-popular .inner-content .para {
+  width: 50%;
+}
+.outer-popular .inner-content .para p {
+  font-family: var(--font-extrabold);
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-bottom: 2%;
+}
+.outer-popular .inner-content .para span {
+  font-size: 1.1rem;
+}
+.outer-popular .inner-content .outer-button {
+  display: flex;
+  gap: 1rem;
+}
+.outer-popular .inner-content .outer-button button {
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+  border: 0.1rem solid var(--border-muted);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.outer-popular .inner-content .outer-button .btn-left:hover {
+  transform: scale(0.95);
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.outer-popular .inner-content .outer-button .btn-right:hover {
+  transform: scale(0.95);
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.outer-popular .category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 240px;
+  gap: 0.5rem;
+  margin-top: 4%;
+  padding: 1rem;
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-main);
+}
+.outer-popular .card {
+  border-radius: 1.2rem;
+  overflow: hidden;
+}
+.outer-popular .card.image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.outer-popular .card.text {
+  padding: 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-muted);
+}
+.outer-popular .card.text p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-family: var(--font-extrabold);
+  margin-bottom: 4%;
+}
+.outer-popular .card.text .wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.outer-popular .card.text .wrap .btn {
+  padding: 0.5rem;
+  border-radius: var(--radius-lg);
+  border: 0.1rem solid var(--border-muted);
+}
+.outer-popular .card.text .arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: -10%;
+}
+.outer-popular .card.text .arrow button {
+  height: 80px;
+  width: 80px;
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+  border: none;
+  color: var(--bg-section);
+  background-color: var(--bg-footer);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.outer-popular .card.text .arrow .btn-left:hover {
+  transform: scale(0.95);
+}
+@media (max-width: 1024px) {
+  .outer-popular .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .outer-popular .category-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*components*//*# sourceMappingURL=main.css.map */
