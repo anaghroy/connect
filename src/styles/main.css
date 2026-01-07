@@ -24,6 +24,7 @@
   /* Shadows */
   --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
   --shadow-md: 0 12px 30px rgba(0, 0, 0, 0.12);
+  --blur-color: rgba(226, 232, 240, 0.65);
   /* Radius */
   --radius-sm: 12px;
   --radius-md: 20px;
@@ -56,6 +57,7 @@ body[data-theme=dark] {
   /* Shadows */
   --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 20px 40px rgba(0, 0, 0, 0.8);
+  --blur-color: rgba(226, 232, 240, 0.65);
 }
 
 /*All fonts SRC*/
@@ -288,7 +290,7 @@ body {
 .main-freeclance .section-part .left .skills .card {
   padding: 0.5rem;
   border-radius: var(--radius-md);
-  background-color: var(--btn-secondary-bg);
+  background-color: var(--accent);
   color: var(--btn-secondary-text);
 }
 .main-freeclance .section-part .left .skills .card span {
@@ -493,7 +495,6 @@ body {
   grid-auto-rows: 240px;
   gap: 0.5rem;
   margin-top: 4%;
-  padding: 1rem;
   border-radius: var(--radius-lg);
   background-color: var(--bg-main);
 }
@@ -562,6 +563,67 @@ body {
   .outer-popular .category-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.outer-wrap {
+  width: 100%;
+  padding: 3rem;
+  position: relative;
+}
+.outer-wrap .video-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.outer-wrap .video-wrapper video {
+  border-radius: var(--radius-xl);
+}
+.outer-wrap .video-content {
+  position: absolute;
+  left: 9.8%;
+  top: 75%;
+  padding: 2rem;
+  width: 80.5%;
+  display: flex;
+  justify-content: center;
+  background: var(--blur-color);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: var(--radius-xl);
+}
+.outer-wrap .video-content .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.outer-wrap .video-content .left .for {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--border-muted);
+  border-radius: var(--radius-xl);
+}
+.outer-wrap .video-content .left .for span {
+  font-family: var(--font-semibold);
+  font-size: 1.1rem;
+  color: var(--bg-footer);
+}
+.outer-wrap .video-content .left p {
+  font-size: 3.5rem;
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+}
+.outer-wrap .video-content .right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.outer-wrap .video-content .right p {
+  font-size: 1rem;
+  font-family: var(--font-medium);
 }
 
 /*components*//*# sourceMappingURL=main.css.map */

@@ -1,4 +1,4 @@
-import { MoveLeft, MoveRight} from "lucide-react";
+import { MoveLeft, MoveRight } from "lucide-react";
 import artist from "../assets/images/services/artist.jpg";
 import contentcreator from "../assets/images/services/contentcreator.jpg";
 import graphicdesigner from "../assets/images/services/graphicdesigner.jpg";
@@ -7,7 +7,7 @@ import Leftarrow from "./Leftarrow";
 
 const Popular = () => {
   return (
-    <div className="outer-popular">
+    <section className="outer-popular">
       <div className="inner-content">
         <div className="para">
           <p>popular services</p>
@@ -35,7 +35,7 @@ const Popular = () => {
             <div className="btn">Game Design</div>
             <div className="btn">Ai Artist</div>
           </div>
-          <Leftarrow/>
+          <Leftarrow />
         </div>
         <div class="card image">
           <img src={artist} alt="artist" />
@@ -47,7 +47,7 @@ const Popular = () => {
             <div className="btn">Ai Explainer</div>
             <div className="btn">live-action Explainer</div>
           </div>
-           <Leftarrow/>
+          <Leftarrow />
         </div>
         <div class="card image">
           <img src={contentcreator} alt="contentcreator" />
@@ -65,7 +65,7 @@ const Popular = () => {
             <div className="btn">Print design</div>
             <div className="btn">Logo design</div>
           </div>
-           <Leftarrow/>
+          <Leftarrow />
         </div>
         <div class="card image">
           <img src={marketing} alt="marketing" />
@@ -79,10 +79,10 @@ const Popular = () => {
             <div className="btn">Afflicate Marketing</div>
             <div className="btn">Content</div>
           </div>
-           <Leftarrow/>
+          <Leftarrow />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
