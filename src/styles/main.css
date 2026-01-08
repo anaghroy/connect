@@ -228,6 +228,7 @@ body {
   border-bottom-right-radius: var(--radius-lg);
 }
 .main-freeclance .text {
+  overflow: hidden;
   width: -moz-fit-content;
   width: fit-content;
 }

@@ -7,6 +7,7 @@
   border-bottom-left-radius: var(--radius-lg);
   border-bottom-right-radius: var(--radius-lg);
   .text {
+    overflow: hidden;
     width: fit-content;
     // background-color: red;
     p {
@@ -156,6 +157,7 @@
     }
     .right {
       width: 50%;
+
       .image-container {
         position: relative;
         top: 30%;
