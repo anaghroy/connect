@@ -77,10 +77,10 @@
       color: var(--btn-primary-text);
       cursor: pointer;
       transition: all 0.3s ease-in-out;
-    }
-    :hover {
-      background-color: var(--btn-primary-text);
-      color: var(--btn-primary-bg);
+      &:hover {
+        background-color: var(--btn-primary-text);
+        color: var(--btn-primary-bg);
+      }
     }
     .radial {
       position: absolute;

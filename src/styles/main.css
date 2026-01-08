@@ -923,7 +923,7 @@ body {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.experience-wrapper .right :hover {
+.experience-wrapper .right button:hover {
   background-color: var(--btn-primary-text);
   color: var(--btn-primary-bg);
 }
