@@ -626,4 +626,201 @@ body {
   font-family: var(--font-medium);
 }
 
+.main-choose {
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+}
+.main-choose .radial {
+  position: absolute;
+  top: 10%;
+  left: -9%;
+  width: 40%;
+}
+.main-choose .radial img {
+  width: 50%;
+}
+.main-choose .para {
+  width: 100%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-choose .para p {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: var(--font-bold);
+  text-align: center;
+}
+.main-choose .para span {
+  text-align: center;
+  font-size: 1.1rem;
+}
+.main-choose .main-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  gap: 2rem;
+}
+.main-choose .main-wrapper .left {
+  width: 40%;
+}
+.main-choose .main-wrapper .left img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.main-choose .main-wrapper .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.main-choose .main-wrapper .right .card {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: var(--radius-xl);
+  border: 0.1rem solid var(--btn-secondary-bg);
+  background-color: var(--text-muted);
+}
+.main-choose .main-wrapper .right .card .icons {
+  height: 100px;
+  width: 100px;
+  border-radius: var(--radius-xl);
+  background-color: var(--btn-secondary-bg);
+}
+.main-choose .main-wrapper .right .card .card-primary {
+  height: 100px;
+  width: 130px;
+  border-radius: var(--radius-xl);
+  background-color: var(--btn-secondary-bg);
+  position: relative;
+}
+.main-choose .main-wrapper .right .card .card-primary .git {
+  position: absolute;
+  left: 20%;
+  top: 25%;
+}
+.main-choose .main-wrapper .right .card .card-secondary {
+  height: 100px;
+  width: 180px;
+  border-radius: var(--radius-xl);
+  background-color: var(--btn-secondary-bg);
+  position: relative;
+}
+.main-choose .main-wrapper .right .card .card-secondary .message {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+.main-choose .main-wrapper .right .card .card-accent {
+  height: 100px;
+  width: 130px;
+  border-radius: var(--radius-xl);
+  background-color: var(--btn-secondary-bg);
+  position: relative;
+}
+.main-choose .main-wrapper .right .card .card-accent .shield {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+.main-choose .main-wrapper .right .card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main-choose .main-wrapper .right .card .text span {
+  font-size: 2rem;
+  font-family: var(--font-semibold);
+}
+.main-choose .main-wrapper .right .card .text p {
+  font-size: 1.1rem;
+}
+.main-choose .video-content {
+  position: absolute;
+  left: 9.8%;
+  transform: translateY(-60%);
+  padding: 2rem;
+  width: 80.5%;
+  display: flex;
+  justify-content: center;
+  background: var(--blur-color);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: var(--radius-xl);
+}
+.main-choose .video-content .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.main-choose .video-content .left .for {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem 2rem;
+}
+.main-choose .video-content .left .for p {
+  font-size: 3.5rem;
+  font-family: var(--font-bold);
+  text-transform: uppercase;
+}
+.main-choose .video-content .left .outer-button {
+  display: flex;
+  gap: 1rem;
+}
+.main-choose .video-content .left .outer-button button {
+  padding: 1.5rem;
+  border-radius: var(--radius-xl);
+  border: 0.1rem solid var(--border-muted);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.main-choose .video-content .left .outer-button .btn-left:hover {
+  transform: scale(0.95);
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.main-choose .video-content .left .outer-button .btn-right:hover {
+  transform: scale(0.95);
+  background-color: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.main-choose .video-content .right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.main-choose .video-content .right .quote {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 10%;
+}
+.main-choose .video-content .right p {
+  font-size: 1rem;
+  font-family: var(--font-medium);
+}
+.main-choose .video-content .right .quote2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  position: absolute;
+  left: 90%;
+  top: 65%;
+}
+
 /*components*//*# sourceMappingURL=main.css.map */

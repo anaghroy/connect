@@ -1,9 +1,9 @@
-import { MoveLeft, MoveRight } from "lucide-react";
 import artist from "../assets/images/services/artist.jpg";
 import contentcreator from "../assets/images/services/contentcreator.jpg";
 import graphicdesigner from "../assets/images/services/graphicdesigner.jpg";
 import marketing from "../assets/images/services/marketing.jpg";
 import Leftarrow from "./Leftarrow";
+import LeftRightArrow from "./LeftRightArrow";
 
 const Popular = () => {
   return (
@@ -17,12 +17,7 @@ const Popular = () => {
           </span>
         </div>
         <div className="outer-button">
-          <button className="btn-left">
-            <MoveLeft size={20} />
-          </button>
-          <button className="btn-right">
-            <MoveRight size={20} />
-          </button>
+          <LeftRightArrow />
         </div>
       </div>
       {/**Grid layout */}
