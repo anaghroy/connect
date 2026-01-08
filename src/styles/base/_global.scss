@@ -1,4 +1,16 @@
-* {
+html[data-theme] {
+  *,
+  *::before,
+  *::after {
+    transition: background-color 0.35s ease, color 0.35s ease,
+      border-color 0.35s ease, box-shadow 0.35s ease, fill 0.35s ease,
+      stroke 0.35s ease;
+  }
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,14 +19,13 @@
 html {
   width: 100%;
   scroll-behavior: smooth;
-
 }
 body {
   min-height: 100vh;
   font-family: var(--font-regular);
   color: var(--text-primary);
   background-color: var(--bg-main);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none;
 }
 
 /*scrollbar-background*/

@@ -1,4 +1,7 @@
+import { useTheme } from "../context/ThemeContext";
+
 const FeaturedCard = ({ features }) => {
+  const { theme } = useTheme();
   return (
     <>
       {features.map((item, index) => {
@@ -10,7 +13,7 @@ const FeaturedCard = ({ features }) => {
               <Icon
                 className={`${item.contextName}`}
                 size={50}
-                color={item.iconcolor}
+                color={theme === "dark" ? "#e2e8f0" : "#0f172a"}
               />
             </div>
 

@@ -26,7 +26,7 @@
         object-position: center;
       }
       h1 {
-        color: var(--text-inverse);
+        color: var(--text-primary);
         font-size: 1.2rem;
         text-transform: uppercase;
         font-family: var(--font-extrabold);
@@ -35,7 +35,7 @@
     .text {
       p {
         font-size: 1rem;
-        color: var(--text-inverse);
+        color: var(--text-primary);
       }
     }
     .icons {
@@ -52,19 +52,19 @@
     p {
       font-size: 1.1rem;
       text-transform: uppercase;
-      color: var(--text-inverse);
+      color: var(--text-primary);
       font-family: var(--font-semibold);
     }
     a {
       text-decoration: none;
-      color: var(--text-inverse);
+      color: var(--text-primary);
     }
   }
   .underline {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    border-bottom: 0.1rem solid #f6fbfa;
+    border-bottom: 0.1rem solid var(--text-primary);
   }
   .copy {
     display: flex;
@@ -73,7 +73,7 @@
     padding: 2.5rem 0.5rem;
 
     span {
-      color: var(--text-inverse);
+      color: var(--text-primary);
     }
     .links {
       display: flex;
@@ -82,7 +82,7 @@
 
       a {
         text-decoration: none;
-        color: var(--text-inverse);
+        color: var(--text-primary);
       }
     }
   }

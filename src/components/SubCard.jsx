@@ -1,12 +1,19 @@
-import React from "react";
+import { useTheme } from "../context/ThemeContext";
 
 const SubCard = () => {
+  const { theme } = useTheme();
   return (
     <>
       <div className="video-content">
         <div className="left">
           <div className="for">
-            <span>For Talent</span>
+            <span
+              style={{
+                color: theme === "dark" ? "#fff" : "#0f172a",
+              }}
+            >
+              For Talent
+            </span>
           </div>
           <p>Find outstanding workmanship.</p>
         </div>

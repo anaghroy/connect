@@ -12,7 +12,9 @@ import profile4 from "../assets/images/users/profile4.jpg";
 import profile5 from "../assets/images/users/profile5.jpg";
 import profile7 from "../assets/images/users/profile7.jpg";
 import profile1 from "../assets/images/users/profile1.jpg";
+import { useTheme } from "../context/ThemeContext";
 const Freelance = () => {
+  const { theme } = useTheme();
   return (
     <section className="main-freeclance">
       <div className="text">
@@ -108,7 +110,11 @@ const Freelance = () => {
             </div>
             <div className="content">
               <div className="text-icons">
-                <ScrollText className="scroll" size={32} color="#f6fbfa" />
+                <ScrollText
+                  className="scroll"
+                  size={32}
+                  color={theme === "dark" ? "#0f172a" : "#e2e8f0"}
+                />
               </div>
               <div className="flex">
                 <span>80+ projects completed</span>
@@ -116,7 +122,11 @@ const Freelance = () => {
             </div>
             <div className="content">
               <div className="text-icons">
-                <BadgeDollarSign className="badge" size={32} color="#f6fbfa" />
+                <BadgeDollarSign
+                  className="badge"
+                  size={32}
+                  color={theme === "dark" ? "#0f172a" : "#e2e8f0"}
+                />
               </div>
               <div className="flex">
                 <span>$30 per hour</span>

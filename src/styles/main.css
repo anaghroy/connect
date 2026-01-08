@@ -1,10 +1,12 @@
 /*base*/
-:root {
+:root[data-theme=light] {
   /* Backgrounds */
   --bg-main: #eaf3f1;
   --bg-section: #f6fbfa;
   --bg-card: #ffffff;
   --bg-footer: #000000;
+  /*Icons*/
+  --icon-color: #ffff;
   /* Text */
   --text-primary: #0f172a;
   --text-secondary: #475569;
@@ -32,12 +34,14 @@
   --radius-xl: 50px;
 }
 
-body[data-theme=dark] {
+:root[data-theme=dark] {
   /* Backgrounds */
   --bg-main: #0b1120;
   --bg-section: #0f172a;
   --bg-card: #111827;
   --bg-footer: #020617;
+  /*Icons*/
+  --icon-color: #fff;
   /* Text */
   --text-primary: #f8fafc;
   --text-secondary: #cbd5f5;
@@ -58,6 +62,11 @@ body[data-theme=dark] {
   --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.6);
   --shadow-md: 0 20px 40px rgba(0, 0, 0, 0.8);
   --blur-color: rgba(226, 232, 240, 0.65);
+  /* Radius */
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 50px;
 }
 
 /*All fonts SRC*/
@@ -95,7 +104,15 @@ body[data-theme=dark] {
   --font-extrabold: "extrabold", sans-serif;
 }
 
-* {
+html[data-theme] *,
+html[data-theme] *::before,
+html[data-theme] *::after {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, fill 0.35s ease, stroke 0.35s ease;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -111,7 +128,9 @@ body {
   font-family: var(--font-regular);
   color: var(--text-primary);
   background-color: var(--bg-main);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 /*scrollbar-background*/
@@ -545,7 +564,7 @@ body {
   padding: 1.5rem;
   border-radius: var(--radius-xl);
   border: none;
-  color: var(--bg-section);
+  color: var(--icon-color);
   background-color: var(--bg-footer);
   outline: none;
   cursor: pointer;
@@ -784,6 +803,7 @@ body {
   border-radius: var(--radius-xl);
   border: 0.1rem solid var(--border-muted);
   outline: none;
+  border: none;
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -909,7 +929,7 @@ body {
 }
 .experience-wrapper .right .radial {
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 85%;
   width: 35%;
 }
@@ -950,14 +970,14 @@ body {
      object-position: center;
 }
 .main-footer .logo-section .svg-logo h1 {
-  color: var(--text-inverse);
+  color: var(--text-primary);
   font-size: 1.2rem;
   text-transform: uppercase;
   font-family: var(--font-extrabold);
 }
 .main-footer .logo-section .text p {
   font-size: 1rem;
-  color: var(--text-inverse);
+  color: var(--text-primary);
 }
 .main-footer .logo-section .icons {
   display: flex;
@@ -972,18 +992,18 @@ body {
 .main-footer .product p {
   font-size: 1.1rem;
   text-transform: uppercase;
-  color: var(--text-inverse);
+  color: var(--text-primary);
   font-family: var(--font-semibold);
 }
 .main-footer .product a {
   text-decoration: none;
-  color: var(--text-inverse);
+  color: var(--text-primary);
 }
 .main-footer .underline {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border-bottom: 0.1rem solid #f6fbfa;
+  border-bottom: 0.1rem solid var(--text-primary);
 }
 .main-footer .copy {
   display: flex;
@@ -992,7 +1012,7 @@ body {
   padding: 2.5rem 0.5rem;
 }
 .main-footer .copy span {
-  color: var(--text-inverse);
+  color: var(--text-primary);
 }
 .main-footer .copy .links {
   display: flex;
@@ -1001,5 +1021,5 @@ body {
 }
 .main-footer .copy .links a {
   text-decoration: none;
-  color: var(--text-inverse);
+  color: var(--text-primary);
 }/*# sourceMappingURL=main.css.map */
