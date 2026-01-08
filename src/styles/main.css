@@ -228,14 +228,13 @@ body {
   border-bottom-right-radius: var(--radius-lg);
 }
 .main-freeclance .text {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
 }
 .main-freeclance .text p {
   color: var(--text-inverse);
   text-transform: uppercase;
-  font-size: 16.3rem;
-  font-family: var(--font-bold);
+  font-size: 16.5rem;
+  font-family: var(--font-extrabold);
   text-align: center;
 }
 .main-freeclance .section-part {
