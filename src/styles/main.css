@@ -929,12 +929,12 @@ body {
 }
 .experience-wrapper .right .radial {
   position: absolute;
-  top: 65%;
+  top: 75%;
   left: 85%;
-  width: 35%;
+  width: 15%;
 }
 .experience-wrapper .right .radial img {
-  width: 60%;
+  width: 100%;
 }
 
 .main-footer {
