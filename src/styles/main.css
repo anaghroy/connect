@@ -226,9 +226,11 @@ body {
   background-color: var(--accent-soft);
   border-bottom-left-radius: var(--radius-lg);
   border-bottom-right-radius: var(--radius-lg);
+  overflow: hidden;
 }
 .main-freeclance .text {
-  width: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .main-freeclance .text p {
   color: var(--text-inverse);
