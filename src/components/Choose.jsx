@@ -10,7 +10,7 @@ const Choose = () => {
   return (
     <section className="main-choose">
       <div className="radial">
-    <img src={radial} alt="radial" />
+        <img src={radial} alt="radial" />
       </div>
       <div className="para">
         <p>Why choose us?</p>
@@ -49,7 +49,7 @@ const Choose = () => {
             anyone looking for top-notch skills and professionalism."
           </p>
           <div className="quote2">
-            <FontAwesomeIcon size="2x" icon={faQuoteRight} /> 
+            <FontAwesomeIcon size="2x" icon={faQuoteRight} />
           </div>
         </div>
       </div>

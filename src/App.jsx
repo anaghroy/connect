@@ -5,6 +5,7 @@ import Popular from './components/Popular'
 import Workmanship from './components/Workmanship'
 import Choose from './components/Choose'
 import { features } from './data/features'
+import Experienced from './components/Experienced'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Popular/>
       <Workmanship/>
       <Choose features={features}/>
+      <Experienced/>
     </div>
   )
 }
