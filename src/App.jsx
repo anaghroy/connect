@@ -6,6 +6,7 @@ import Workmanship from './components/Workmanship'
 import Choose from './components/Choose'
 import { features } from './data/features'
 import Experienced from './components/Experienced'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Workmanship/>
       <Choose features={features}/>
       <Experienced/>
+      <Footer/>
     </div>
   )
 }
