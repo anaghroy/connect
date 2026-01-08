@@ -21,7 +21,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  height: 100%;
+  min-height: 100vh;
   font-family: var(--font-regular);
   color: var(--text-primary);
   background-color: var(--bg-main);
