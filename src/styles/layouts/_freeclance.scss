@@ -7,7 +7,7 @@
   border-bottom-left-radius: var(--radius-lg);
   border-bottom-right-radius: var(--radius-lg);
   .text {
-    overflow: hidden;
+    overflow-x: hidden;
     width: fit-content;
     // background-color: red;
     p {
