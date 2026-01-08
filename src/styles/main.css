@@ -228,14 +228,13 @@ body {
   border-bottom-right-radius: var(--radius-lg);
 }
 .main-freeclance .text {
-  overflow-x: hidden;
   width: -moz-fit-content;
   width: fit-content;
 }
 .main-freeclance .text p {
   color: var(--text-inverse);
   text-transform: uppercase;
-  font-size: 16.5rem;
+  font-size: 16.3rem;
   font-family: var(--font-extrabold);
   text-align: center;
 }
