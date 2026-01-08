@@ -228,9 +228,8 @@ body {
   border-bottom-right-radius: var(--radius-lg);
 }
 .main-freeclance .text {
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: red;
+  width: 100vh;
+  max-height: 100vh;
 }
 .main-freeclance .text p {
   color: var(--text-inverse);
