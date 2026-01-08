@@ -124,7 +124,7 @@ html {
 }
 
 body {
-  min-height: 100vh;
+  height: 100%;
   font-family: var(--font-regular);
   color: var(--text-primary);
   background-color: var(--bg-main);
@@ -230,6 +230,7 @@ body {
 .main-freeclance .text {
   width: -moz-fit-content;
   width: fit-content;
+  background-color: red;
 }
 .main-freeclance .text p {
   color: var(--text-inverse);
